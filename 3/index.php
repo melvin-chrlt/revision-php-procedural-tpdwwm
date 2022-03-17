@@ -1,10 +1,5 @@
 <?php
-    session_start();
-
-    if (isset($_GET['logout'])) {
-        session_destroy();
-        header('Location:index.php?success=disconnect');
-    }
+    
 ?>
 
 <!DOCTYPE html>
@@ -14,15 +9,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     
-
+    <title>Exercice 3</title>
+    <link rel="stylesheet" href="../1/exo1.css">  
 </head>
 
 <body>
     <?php
         include '../4/_navbar.php';
-        include_once '../5/_alert.php';
+        //include_once '../5/_alert.php';
     ?>
     <h1>Exercice 3 : Inscription</h1>
     <p>A l'aide d'un formulaire HTML et de PHP, simulez un formulaire d'inscription (avec hashage du mot de passe)
@@ -35,12 +29,24 @@
     <small>Ne pas afficher le formulaire s'il est connecté</small>
     <p><b>BONUS : vérifier que le username fait plus de 3 caractères et que le mot de passe en fait au moins 6</b></p>
     <p><b>BONUS : inclure un lien qui permet de se déconnecter</b></p>
-    <ul>
-        <li>username</li>
-        <li>password</li>
-        <li>confirmation password</li>
-        <li>email</li>
-    </ul>
+
+    <div>
+        <form action="exo3_post.php" method="POST">
+            <label for="email">Email *</label>
+            <input type="text" name="email" required>
+
+            <label for="username">Username *</label>
+            <input type="text" name="username" required>
+            
+            <label for="password">Password *</label>
+            <input type="password" name="password" required>
+            
+            <label for="password2">Confirm password *</label>
+            <input type="password" name="password2" required>
+            
+            <button type="submit">ENVOYER</button>
+        </form>
+    </div>
 </body>
 
 </html>

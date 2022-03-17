@@ -10,10 +10,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice 7</title>
-
+    <link rel="stylesheet" href="../1/exo1.css">
 </head>
 
 <body>
+    <?php
+        include '../4/_navbar.php';
+        //include_once '../5/_alert.php';
+    ?>
     <h1>Exercice 7 : Ajout simple à la BDD</h1>
     <p>A partir de la connexion réalisée à l'exercice 6 et des apprentissages des exercices précédents, utilisez un
         formulaire pour ajouter des nouvelles lignes de transport dans la base de données. Vous pourrez vous inspirer du

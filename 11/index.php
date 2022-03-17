@@ -11,11 +11,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice 11</title>
-
-
+    <link rel="stylesheet" href="../1/exo1.css">
 </head>
 
 <body>
+    <?php
+        include '../4/_navbar.php';
+        //include_once '../5/_alert.php';
+    ?>
     <h1>Exercice 11 : Affichage selon critères</h1>
     <p>A partir de la connexion réalisée à l'exercice 6 et des apprentissages des exercices précédents, utilisez un
         formulaire qui permet d'afficher les lignes de transports selon des critères (comprendre avec un select) qui
