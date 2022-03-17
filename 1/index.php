@@ -49,10 +49,12 @@
 </html>
 
 <?php
-    echo "Nom: ". strtoupper($_POST['nom']). "<br>";
-    echo "Prénom: ". $_POST['prenom']. "<br>";
-    echo "Genre: ". $_POST['genre']. "<br>";
-    echo "Adresse: ". $_POST['adresse']. "<br>";
-    echo "Ville: ". $_POST['ville']. "<br>";
-    echo "Code Postal: ". $_POST['code_postal'];
+    if(isset($_POST['nom']) || isset($_POST['prenom']) || isset($_POST['genre']) || isset($_POST['adresse']) || isset($_POST['ville']) || isset($_POST['code_postal'])){
+        echo "Nom: ". strtoupper($_POST['nom']). "<br>";
+        echo "Prénom: ". $_POST['prenom']. "<br>";
+        echo "Genre: ". $_POST['genre']. "<br>";
+        echo "Adresse: ". $_POST['adresse']. "<br>";
+        echo "Ville: ". $_POST['ville']. "<br>";
+        echo "Code Postal: ". $_POST['code_postal'];
+    }
 ?>

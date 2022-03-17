@@ -12,17 +12,14 @@
 <body>
     <?php
         include '../4/_navbar.php';
+        require 'includes/db.php';
         //include_once '../5/_alert.php';
+        require '_sqlFetchTransports.php';
     ?>
     <h1>Exercice 6 : Connexion à la BDD</h1>
-    <p>A partir de vos connaissances, établissez une connexion à une base de données MySQL. VOUS N'UTILISEREZ PAS DE
-        CONSTANTES DANS CETTE METHODE, simplement les infos de connexion. Le fichier de connexion ne contiendra que du
-        PHP. Cette base de données se nommera transports et contiendra 1 table nommée lignes de 4 colonnes id,nom de
-        ligne,terminus_a et terminus_b. Assurez vous d'utiliser PDO lors de l'établissement de la connexion et vérifiez
-        si elle fonctionne.</p>
+    <p>A partir de vos connaissances, établissez une connexion à une base de données MySQL. VOUS N'UTILISEREZ PAS DE CONSTANTES DANS CETTE METHODE, simplement les infos de connexion. Le fichier de connexion ne contiendra que du PHP. Cette base de données se nommera transports et contiendra 1 table nommée lignes de 4 colonnes id,nom de ligne,terminus_a et terminus_b. Assurez vous d'utiliser PDO lors de l'établissement de la connexion et vérifiez si elle fonctionne.</p>
     <small>Utilisez un système de bloc try/catch afin de réaliser vos opérations SQL.</small>
     <p><b>Bonus : Ajoutez un système de variables d'environnements pour sécuriser la connexion.</b></p>
-
 </body>
 
 </html>
