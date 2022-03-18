@@ -9,6 +9,15 @@ div{
     padding-top: 3em;
 }
 
+#container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -64,4 +73,42 @@ form>button{
 #navbar>ul>li>a:hover{
     color: white;
     background-color: black;
+}
+
+.add{
+    background-color: lightblue;
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.edit{
+    background-color: lightgreen;
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+#button{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.delete{
+    background-color: white;
+    padding: 0;
+}
+
+.delete>input{
+    background-color: red;
+    width: 100%;
+    color: white;
+    padding: 0.70em 1.5em;
+    margin: 0;
 }

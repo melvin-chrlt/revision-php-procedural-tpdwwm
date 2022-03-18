@@ -1,3 +1,10 @@
+<?php 
+    require '../6/includes/db.php';
+    if(isset($_GET['message'])){
+        $message = $_GET['message'];
+        echo $message;
+    } 
+?>
 <div id="navbar">
     <ul>
         <li><a href="../1/index.php">Exercice 1</a></li>

@@ -1,6 +1,6 @@
 <?php
-    require '../7/_viewCorp.php';
-    require '../11/_viewLinesFromCorp.php';
+    //require '../7/_viewCorp.php';
+    //require '../11/_viewLinesFromCorp.php';
 ?>
 
 <!DOCTYPE html>

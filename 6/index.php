@@ -12,7 +12,6 @@
 <body>
     <?php
         include '../4/_navbar.php';
-        require 'includes/db.php';
         //include_once '../5/_alert.php';
         require '_sqlFetchTransports.php';
     ?>
